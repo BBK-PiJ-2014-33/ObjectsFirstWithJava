@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ printNextMailItem()
+comment0.text=\n\ Print\ the\ next\ mail\ item\ (if\ any)\ for\ this\ user\ to\ the\ text\ \n\ terminal.\n
+comment1.params=to\ message
+comment1.target=void\ sendMailItem(java.lang.String,\ java.lang.String)
+comment1.text=\n\ Send\ the\ given\ message\ to\ the\ given\ recipient\ via\n\ the\ attached\ mail\ server.\n\ @param\ to\ The\ intended\ recipient.\n\ @param\ message\ The\ text\ of\ the\ message\ to\ be\ sent.\n
+numComments=2
