@@ -57,6 +57,43 @@ public class DayTest extends junit.framework.TestCase
         assertEquals(true, day1.makeAppointment(9, appointm1));
         assertEquals(false, day1.makeAppointment(9, appointm2));
     }
+
+    public void testFindSpace9()
+    {
+        Day day1 = new Day(1);
+        Appointment appointm1 = new Appointment("Java lecture", 1);
+        assertEquals(9, day1.findSpace(appointm1));
+    }
+
+    public void testFindSpace10()
+    {
+        Day day1 = new Day(1);
+        Appointment appointm1 = new Appointment("java lecture", 1);
+        assertEquals(true, day1.makeAppointment(9, appointm1));
+        assertEquals(10, day1.findSpace(appointm1));
+    }
+
+    public void testFinsSpaceFullDay()
+    {
+        Day day1 = new Day(1);
+        Appointment appointm1 = new Appointment("java lecture", 9);
+        assertEquals(true, day1.makeAppointment(9, appointm1));
+        Appointment appointm2 = new Appointment("CS lecture", 1);
+        assertEquals(-1, day1.findSpace(appointm2));
+    }
+
+    public void testNegative()
+    {
+        Day day1 = new Day(1);
+        Appointment appointm1 = new Appointment("java lecture", 1);
+        Appointment appointm2 = new Appointment("CS lecture", 2);
+        assertEquals(true, day1.makeAppointment(10, appointm1));
+        assertEquals(false, day1.makeAppointment(9, appointm2));
+    }
 }
+
+
+
+
 
 
