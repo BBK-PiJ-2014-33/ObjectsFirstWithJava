@@ -6,6 +6,10 @@
  */
 public class DayTest extends junit.framework.TestCase
 {
+    private Day day1;
+    private Appointment appointm1;
+    private Appointment appointm2;
+
     /**
      * Default constructor for test class DayTest
      */
@@ -20,6 +24,9 @@ public class DayTest extends junit.framework.TestCase
      */
     protected void setUp()
     {
+        day1 = new Day(1);
+        appointm1 = new Appointment("java lecture", 2);
+        appointm2 = new Appointment("CS lecture", 2);
     }
 
     /**
