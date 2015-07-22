@@ -1,12 +1,12 @@
 #BlueJ class context
-comment0.params=direction
-comment0.target=Room\ getExit(java.lang.String)
-comment1.params=description
-comment1.target=Room(java.lang.String)
-comment1.text=\n\ Create\ a\ room\ described\ "description".\ Initially,\ it\ has\n\ no\ exits.\ "description"\ is\ something\ like\ "a\ kitchen"\ or\n\ "an\ open\ court\ yard".\n\ @param\ description\ The\ room's\ description.\n
-comment2.params=north\ east\ south\ west
-comment2.target=void\ setExits(Room,\ Room,\ Room,\ Room)
-comment2.text=\n\ Define\ the\ exits\ of\ this\ room.\ \ Every\ direction\ either\ leads\n\ to\ another\ room\ or\ is\ null\ (no\ exit\ there).\n\ @param\ north\ The\ north\ exit.\n\ @param\ east\ The\ east\ east.\n\ @param\ south\ The\ south\ exit.\n\ @param\ west\ The\ west\ exit.\n
+comment0.params=description
+comment0.target=Room(java.lang.String)
+comment0.text=\n\ Create\ a\ room\ described\ "description".\ Initially,\ it\ has\n\ no\ exits.\ "description"\ is\ something\ like\ "a\ kitchen"\ or\n\ "an\ open\ court\ yard".\n\ @param\ description\ The\ room's\ description.\n
+comment1.params=direction
+comment1.target=Room\ getExit(java.lang.String)
+comment2.params=direction\ neighbor
+comment2.target=void\ setExits(java.lang.String,\ Room)
+comment2.text=\n\ Define\ the\ exits\ of\ this\ room.\ \ \n\ @param\ direction\ The\ direction\ of\ the\ exit\n\ @param\ neighbor\ The\ room\ in\ the\ given\ direction\n
 comment3.params=
 comment3.target=java.lang.String\ getDescription()
 comment3.text=\n\ @return\ The\ description\ of\ the\ room.\n
