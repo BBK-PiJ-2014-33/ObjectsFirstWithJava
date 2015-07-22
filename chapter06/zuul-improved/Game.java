@@ -115,6 +115,13 @@ public class Game
         else if (commandWord.equals("quit")) {
             wantToQuit = quit(command);
         }
+        else if (commandWord.equals("look")) {
+           look();
+        }
+        else if (commandWord.equals("eat")) {
+           eat();
+        }
+
 
         return wantToQuit;
     }
@@ -166,7 +173,17 @@ public class Game
         System.out.print(currentRoom.getLongDescription());
         System.out.println();
     }
+    
+    private void look()
+    {
+        printLocationInfo();
+    }
 
+    private void eat()
+    {
+        System.out.println("You have eaten now and you are not hungry any more");
+    }
+    
     /** 
      * "Quit" was entered. Check the rest of the command to see
      * whether we really quit the game.
