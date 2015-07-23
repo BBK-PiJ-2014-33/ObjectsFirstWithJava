@@ -66,6 +66,7 @@ public class Item
     public void print()
     {
         System.out.print("title: " + title);
+        System.out.println();
         //System.out.print("title: " + title + " (" + playingTime + " mins)");
         //if(gotIt) {
             //System.out.println("*");
