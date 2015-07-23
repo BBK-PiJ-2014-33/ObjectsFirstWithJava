@@ -65,13 +65,14 @@ public class Item
      */
     public void print()
     {
-        System.out.print("title: " + title + " (" + playingTime + " mins)");
-        if(gotIt) {
-            System.out.println("*");
-        } else {
-            System.out.println();
-        }
-        System.out.println("    " + comment);
+        System.out.print("title: " + title);
+        //System.out.print("title: " + title + " (" + playingTime + " mins)");
+        //if(gotIt) {
+            //System.out.println("*");
+        //} else {
+            //System.out.println();
+        //}
+        //System.out.println("    " + comment);
     }
     public String getTitle()
     {

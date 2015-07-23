@@ -30,6 +30,11 @@ public class DVD extends Item
         return director;
     }
     
+    public void print()
+    {
+        System.out.println("Director: " + director);
+    }
+    
     public void printShortDetails()
     {
         System.out.println("Title: " + this.getTitle() + " Director: " + director);

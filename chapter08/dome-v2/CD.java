@@ -40,6 +40,11 @@ public class CD extends Item
         return numberOfTracks;
     }
     
+    public void print()
+    {
+        System.out.println("Artist: " + artist);
+    }
+    
     public void printShortDetails()
     {
         System.out.println("Title: " + this.getTitle() + " Artist: " + artist);
