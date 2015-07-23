@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Database()
+comment0.text=\n\ Construct\ an\ empty\ Database.\n
+comment1.params=
+comment1.target=void\ list()
+comment1.text=\n\ Print\ a\ list\ of\ all\ currently\ stored\ items\ to\ the\n\ text\ terminal.\n
+numComments=2
