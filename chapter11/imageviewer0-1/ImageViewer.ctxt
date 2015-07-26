@@ -2,11 +2,9 @@
 comment0.params=
 comment0.target=ImageViewer()
 comment0.text=\n\ Create\ an\ ImageViewer\ show\ it\ on\ screen.\n
-comment1.params=event
-comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment1.params=
+comment1.target=void\ makeFrame()
+comment1.text=\n\ Create\ the\ Swing\ frame\ and\ its\ content.\n
 comment2.params=
-comment2.target=void\ makeFrame()
-comment2.text=\n\ Create\ the\ Swing\ frame\ and\ its\ content.\n
-comment3.params=
-comment3.target=void\ makeMenuBar()
-numComments=4
+comment2.target=void\ makeMenuBar()
+numComments=3

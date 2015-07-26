@@ -11,7 +11,7 @@ import javax.swing.*;
  * @author Michael Kölling and David J. Barnes.
  * @version 0.1
  */
-public class ImageViewer implements ActionListener
+public class ImageViewer
 {
     private JFrame frame;
     
@@ -24,10 +24,7 @@ public class ImageViewer implements ActionListener
     }
     
     // ---- swing stuff to build the frame and all its components ----
-    public void actionPerformed(ActionEvent event)
-    {
-        System.out.println("Item: " + event.getActionCommand());
-    }
+    
     /**
      * Create the Swing frame and its content.
      */
@@ -57,18 +54,36 @@ public class ImageViewer implements ActionListener
         menubar.add(fileMenu);
         
         JMenuItem openItem = new JMenuItem("Open");
-        openItem.addActionListener(this);
+        openItem.addActionListener(new OpenActionListener ());
         fileMenu.add(openItem);
 
         JMenuItem quitItem = new JMenuItem("Quit");
-        quitItem.addActionListener(this);
+        quitItem.addActionListener(new QuitActionListener ());
         fileMenu.add(quitItem);
         
         JMenu fileMenu1 = new JMenu("Help");
         menubar.add(fileMenu1);
         
         JMenuItem aboutItem = new JMenuItem("About ImageViewer");
-        aboutItem.addActionListener(this);
         fileMenu1.add(aboutItem);
     }
+    
+    class OpenActionListener implements ActionListener
+	{
+		public void actionPerformed( ActionEvent event)
+		{
+			//perform open action
+			System.out.println("Item: " + event.getActionCommand());
+		}
+	}
+	
+	class QuitActionListener implements ActionListener
+	{
+		public void actionPerformed( ActionEvent event)
+		{
+			//perform quit action
+			System.out.println("Item: " + event.getActionCommand());
+		}
+	}
+
 }
