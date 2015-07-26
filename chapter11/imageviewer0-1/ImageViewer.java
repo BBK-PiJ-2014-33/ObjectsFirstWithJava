@@ -39,6 +39,14 @@ public class ImageViewer
         JButton button = new JButton("Press me, please");
         contentPane.add(button);
         
+        makeMenuBar();
+        
+        frame.pack();
+        frame.setVisible(true);
+    }
+    
+    private void makeMenuBar(){
+        
         JMenuBar menubar = new JMenuBar();
         frame.setJMenuBar(menubar);
         
@@ -51,7 +59,10 @@ public class ImageViewer
         JMenuItem quitItem = new JMenuItem("Quit");
         fileMenu.add(quitItem);
         
-        frame.pack();
-        frame.setVisible(true);
+        JMenu fileMenu1 = new JMenu("Help");
+        menubar.add(fileMenu1);
+        
+        JMenuItem aboutItem = new JMenuItem("About ImageViewer");
+        fileMenu1.add(aboutItem);
     }
 }
