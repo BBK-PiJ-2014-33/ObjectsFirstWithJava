@@ -33,9 +33,13 @@ public class ImageViewer
         frame = new JFrame("ImageViewer");        
         Container contentPane = frame.getContentPane();
         
-        JLabel label = new JLabel("I am a label. I can display some text.");
-        contentPane.add(label);
-
+        //JLabel label = new JLabel("I am a label. I can display some text.");
+        //contentPane.add(label);
+     
+        JButton button = new JButton("Press me, please");
+        
+        contentPane.add(button);
+        
         frame.pack();
         frame.setVisible(true);
     }
